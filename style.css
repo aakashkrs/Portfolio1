@@ -208,17 +208,28 @@ span{
 #sub:hover {
     background-color: black;
 }
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;         
+    gap: 4em;
+}
 
 @media (max-width: 992px) {
     .home {
         flex-direction: column;
         text-align: center;
-        padding: 50px 5%;
-        gap: 3em;
+        min-height: auto;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 30px 5%;
+        gap: 2em;
     }
 
     .img-box img {
         width: 400px;
+        max-width: 100%;
     }
 
     .home-content h1 {
@@ -228,7 +239,8 @@ span{
     .home-content h3 {
         font-size: 32px;
     }
-    .sub{
+
+    .sub {
         justify-content: center;
     }
 }
@@ -248,13 +260,13 @@ span{
     }
 
     .home {
-        flex-direction: column;
-        text-align: center;
-        gap: 2em;
+        padding: 20px 4%;
+        gap: 1.5em;
     }
 
     .img-box img {
         width: 300px;
+        max-width: 100%;
     }
 
     .home-content h1 {
@@ -266,24 +278,45 @@ span{
     }
 
     .btn-box {
+        display: flex;
         flex-direction: column;
         width: 100%;
         align-items: center;
+        gap: 12px;
     }
 
     #skills {
         font-size: 28px;
     }
 
-    #skills  ul li {
+    #skills ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        padding: 0;
+    }
+
+    #skills ul li {
         font-size: 14px;
         padding: 6px 12px;
+    }
+
+    #sub {
+        font-size: 20px;
+        padding: 10px 16px;
     }
 }
 
 @media (max-width: 480px) {
+    .home {
+        padding: 16px 4%;
+        gap: 1.2em;
+    }
+
     .img-box img {
         width: 230px;
+        max-width: 100%;
     }
 
     .home-content h1 {
@@ -296,23 +329,17 @@ span{
 
     p {
         font-size: 15px;
+        line-height: 1.5;
     }
 
     .btn-1,
     .btn-2 {
         font-size: 16px;
         padding: 12px 18px;
+        width: 100%;
+        max-width: 260px;
     }
-}
-@media (max-width: 768px) {
-    #sub {
-        font-size: 20px;
-        padding: 10px 16px;
-    }
-}
 
-/* Small mobile screens */
-@media (max-width: 480px) {
     #sub {
         font-size: 18px;
         padding: 8px 14px;
