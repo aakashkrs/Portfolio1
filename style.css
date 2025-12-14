@@ -309,12 +309,17 @@ span{
 }
 
 @media (max-width: 480px) {
+    .contact{
+        display: none;
+    }
     .home {
+        margin-top: 70px;
         padding: 16px 4%;
         gap: 1.2em;
     }
 
     .img-box img {
+        margin-left: 60px;
         width: 230px;
         max-width: 100%;
     }
